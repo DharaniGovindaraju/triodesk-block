@@ -1,0 +1,307 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Triodesk Block</title>
+
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+	<!-- CSS Files -->
+    <link href=".//assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href=".//assets/css/material-kit.css?v=1.2.0" rel="stylesheet">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href=".//assets/assets-for-demo/vertical-nav.css" rel="stylesheet">
+	<link href=".//assets/assets-for-demo/demo.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href=".//assets/css/create.css">
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/6/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/6/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/6/stats.js"></script></head>
+<body class="index-page">
+	<div id="navbar">
+        <div class="navigation-example">
+	    	<nav class="navbar navbar-info">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-info">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+							<a class="navbar-brand" href="index.html"><img src=".//assets/img/Triodesk.png"></a>
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+						<form class="navbar-form navbar-center" role="search">
+	                        <div class="form-group form-white is-empty">
+	                          <input type="text" class="form-control" placeholder="Search">
+	                        <span class="material-input"></span></div>
+	                        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini"><i class="material-icons">search</i></button>
+	               		</form>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-info">
+						<ul class="nav navbar-nav navbar-right">
+						    <li>
+		                        <a href="support.html">Support</a>
+		                    </li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	    <!--        end info navbar -->
+<main class="content narrow">
+  <h1><b>Create A Pool</b></h1>
+  <mat-horizontal-stepper aria-orientation="horizontal" class="mat-stepper-horizontal ng-tns-c10-1" linear="" role="tablist">
+      <div class="mat-horizontal-content-container"><!---->
+        <div class="mat-horizontal-stepper-content ng-tns-c10-1 ng-trigger ng-trigger-stepTransition ng-star-inserted" role="tabpanel" id="cdk-step-content-1-0" aria-labelledby="cdk-step-label-1-0" aria-expanded="true" style="transform: none; visibility: visible;"><!---->
+          <form novalidate="" class="ng-untouched ng-pristine ng-invalid ng-star-inserted" style="">
+            <app-input-group class="add">
+                  <section>
+                    <label>Your wallet address</label> <br>
+                    <app-input>
+                      <input class="address mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-invalid" formcontrolname="walletAddress" matinput="" type="text" id="mat-input-9" placeholder="" aria-invalid="false" aria-required="false">
+                    </app-input>     
+                  </section>
+            </app-input-group>
+                <p><i>All fields below are optional.</i></p>
+                <div class="category">
+                  <h3 class="title-category">Allocations</h3>
+                  <app-tooltip class="tool">
+                    <div class="tooltip-content">
+                      You have the option to define how big your pool can grow in ethereum value. Also, you may define minimum and maximum contributions from each contributor. PrimaBlock does not enforce any max or mins.
+              
+                    </div>
+                  </app-tooltip>
+                </div>
+            <div class="allocation-fields">
+              <app-input-group class="add">
+                <section>
+                  <label>Maximum Allocation (ETH)</label> <br>
+                  <app-input>
+                    <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="maxAllocation" matinput="" type="text" id="mat-input-10" placeholder="" aria-invalid="false" aria-required="false">
+                  </app-input>
+                </section>
+              </app-input-group>
+              <app-input-group class="add">
+                <section>
+                  <label>Maximum Per Contributor (ETH)</label> <br>
+                    <app-inpu>
+                      <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="maxPerContributor" matinput="" type="text" id="mat-input-11" placeholder="" aria-invalid="false" aria-required="false">
+                    </app-input>
+                </section>
+              </app-input-group>
+              <app-input-group class="add">
+                <section>
+                  <label>Minimum Per Contributor (ETH)</label> <br>
+                  <app-input>
+                    <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="minPerContributor" matinput="" type="text" id="mat-input-12" placeholder="" aria-invalid="false" aria-required="false">
+                  </app-input>
+                </section>
+              </app-input-group>
+            </div>
+            <hr>
+            <div class="category">
+              <h3 class="title-category">
+                Admins
+              </h3>
+              <app-tooltip class="tool">
+                <div class="tooltip-content">
+                  You may assign up to three other administrators who can manage the pool. These may be other people who you trust or alternate wallet addresses that you control.
+                </div>
+              </app-tooltip>
+            </div>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Admin 1 Wallet Address</label> <br>
+                  <app-input>
+                    <input _ngcontent-c9="" class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="admin1" matinput="" type="text" id="mat-input-13" placeholder="" aria-invalid="false" aria-required="false">          
+                  </app-input>        
+              </section>
+            </app-input-group>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Admin 2 Wallet Address</label> <br>
+                  <app-input>
+                    <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="admin2" matinput="" type="text" id="mat-input-14" placeholder="" aria-invalid="false" aria-required="false">        
+                  </app-input>
+                </section>
+            </app-input-group>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Admin 3 Wallet Address</label> <br>
+                <app-input>
+                  <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="admin3" matinput="" type="text" id="mat-input-15" placeholder="" aria-invalid="false" aria-required="false">          
+                </app-input>
+              </section>
+            </app-input-group>
+            <hr>        
+            <div class="category">
+              <h3 class="title-category">Whitelist</h3>
+              <app-tooltip class="tool">
+                <div class="tooltip-content">
+                  You may decide whether to enforce a whitelist, in which case only contributors on the list may contribute in your pool. If you click Yes, you will specify the addresses after launch. Read more about whitelist gas prices in our FAQ.       
+                </div>
+              </app-tooltip>
+            </div>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Create Whitelist</label> <br>
+                <div class="togglebutton">
+				    <label>
+				     	Yes
+				        <input type="checkbox" checked="">
+						No
+				    </label>
+				</div> 
+				<p>You will be able to specify addresses after launch.</p>       
+              </section>
+            </app-input-group>
+            <hr>
+            <div class="category">
+              <h3 class="title-category">Fees</h3>
+              <app-tooltip class="tool">
+                <div class="tooltip-content">
+                  You may charge your contributors a fee for the hard work and value that you bring to them. PrimaBlock’s fee is fixed at 0,5%.
+                </div>
+              </app-tooltip>
+            </div>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Pool Percentage</label> <br>
+                <app-input>
+                  <input class="mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid" formcontrolname="fee" matinput="" max="50" min="0" size="6" type="number" id="mat-input-16" placeholder="" aria-invalid="false" aria-required="false">
+                </app-input>
+                <ul>
+                  <li>
+                    <u>0%</u> goes to you.
+                  </li>
+                  <li>
+                    <u>0.5%</u> goes to PrimaBlock.
+                  </li>
+                  <li>
+                    <b>Total: <u>0.50%</u></b>
+                  </li>
+                </ul>
+              </section>
+            </app-input-group>
+            <hr>
+            <div class="category">
+              <h3 class="title-category">TOKEN DISTRIBUTION</h3>
+              <app-tooltip class="tool">
+                <div class="tooltip-content">
+                  You can elect to have PrimaBlock automatically distribute tokens to the contributors of your pool. Otherwise, each of your contributors will have to claim their tokens from the pool by clicking on the 'GET MY TOKENS' button.
+                </div>
+              </app-tooltip>
+            </div>
+            <app-input-group class="add">
+              <section class="add">
+                <label>Distribute Tokens Automatically</label> <br>
+                <div class="togglebutton">
+				    <label>
+				     	Yes
+				        <input type="checkbox" checked="">
+						No
+				    </label>
+				</div>    
+              </section>
+            </app-input-group>
+            <hr>
+            <app-button-set class="next">
+              <app-styled-button>
+                <button class="primary" matsteppernext="" disabled="">
+                  Submit
+                </button>  
+              </app-styled-button>       
+            </app-button-set>
+          </form>
+        </div>
+        <div class="mat-horizontal-stepper-content ng-tns-c10-1 ng-trigger ng-trigger-stepTransition ng-star-inserted" role="tabpanel" id="cdk-step-content-1-1" aria-labelledby="cdk-step-label-1-1" aria-expanded="false" style="transform: translate3d(100%, 0px, 0px); visibility: hidden;">
+        </div>
+      </div>
+    </mat-horizontal-stepper>
+</main>
+
+<footer class="navbar navbar-info">
+	<div class="container">
+		<a class="footer-brand" href="index.html"><img src=".//assets/img/Triodesk.png"></a>
+   			<ul class="pull-right">
+   				<li>
+   					<a href="disclaimer.html" class="">Disclaimer</a>
+   				</li>
+			</ul>
+    </div>
+</footer>
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+	<script src="assets/js/moment.min.js"></script>
+
+	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+	<script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+	<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+	<script src="assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
+
+	<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+	<script src="assets/js/bootstrap-tagsinput.js"></script>
+
+	<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+	<script src="assets/js/jasny-bootstrap.min.js"></script>
+
+	<!-- Plugin For Google Maps -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js?v=1.2.0" type="text/javascript"></script>
+
+	<!-- Fixed Sidebar Nav - JS For Demo Purpose, Don't Include it in your project -->
+	<script src="assets/assets-for-demo/modernizr.js" type="text/javascript"></script>
+	<script src="assets/assets-for-demo/vertical-nav.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			var slider = document.getElementById('sliderRegular');
+
+	        noUiSlider.create(slider, {
+	            start: 40,
+	            connect: [true,false],
+	            range: {
+	                min: 0,
+	                max: 100
+	            }
+	        });
+
+	        var slider2 = document.getElementById('sliderDouble');
+
+	        noUiSlider.create(slider2, {
+	            start: [ 20, 60 ],
+	            connect: true,
+	            range: {
+	                min:  0,
+	                max:  100
+	            }
+	        });
+
+
+
+			materialKit.initFormExtendedDatetimepickers();
+
+		});
+	</script>
+
+</body>
+</html>

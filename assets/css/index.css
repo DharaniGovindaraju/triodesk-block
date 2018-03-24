@@ -1,0 +1,204 @@
+body {
+    font-family: IBM Plex Sans,sans-serif;
+    letter-spacing: -.02em;
+    color: #102750;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+}
+.navigation-example {
+    min-height: 0;
+    }
+a:hover{
+    text-decoration: underline;
+    color: #0f98aa;
+}
+a {
+    color: #00bcd4;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.navbar .navbar-center{
+    float: left;
+}
+.container .faint-text{
+        float: left;
+}
+.faint-text {
+    position: relative;
+    top: 30px;
+    text-align: right;
+    padding: 0 ;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #c5cbd9;
+}
+main p{
+    text-align: left;
+}
+p {
+    margin: 0 0 10px;
+}
+.above-the-fold{
+width: 85%;
+}
+.faint-text{
+    font-size:15px;
+    line-height:1.2;
+    color:#c5cbd9
+}
+main .container{
+    position:relative;
+    z-index:2}
+.wrap{
+        /*background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='324' viewBox='0 0 192 324'%3E%3Cg fill='none'%3E%3Cpath fill='%23556EAB' d='M139.942 324L.5 239.795V77l140 77.188z'/%3E%3Cpath fill='%230937AB' d='M0 77.128L140.5 0 281 77.128l-140.5 77.127z'/%3E%3Cpath fill='%231B2C59' d='M140 324l140-77.188V77l-140 77.188z'/%3E%3C/g%3E%3C/svg%3E") no-repeat 100% 150px,url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='263' height='351' viewBox='0 0 263 351'%3E%3Cg fill='none'%3E%3Cpath fill='%23556EAB' d='M147.87 350.172l-190.623-24.095-79.232-175.314L66.818 166.51z'/%3E%3Cpath fill='%230937AB' d='M-122.228 150.776L-7.593.126 181.07 15.74 66.433 166.39z'/%3E%3Cpath fill='%231B2C59' d='M147.873 350.066l114.735-151.149-81.652-183.394L66.478 165.926z'/%3E%3C/g%3E%3C/svg%3E") no-repeat 0 600px;
+       */ height:calc(110vw - 200px);
+        min-height:700px;
+        max-height:1300px;
+        overflow:hidden
+    }
+.create-pool{
+    font-size:2.5vw;
+    text-align:left;
+    color:#1b2c59;
+    margin-top:60px;
+    margin-bottom:0
+}
+span.blue{
+    color:#0937ab
+}
+span.grey{
+    color:#c5cbd9
+}
+span.bold{
+    font-weight:700
+}
+span.hr{
+    font-weight:900;
+    letter-spacing:-2rem
+}
+.block1, .block2, .laptop{
+    position:absolute
+}
+.block1{
+    top:25vh;
+    right:0;
+    z-index:-1
+}
+.block2{
+    top:100vh;
+    left:0
+}
+.laptop{
+    right:0;
+    bottom:0;
+    width:80%
+}
+.small-laptop{
+    display:none;
+    position:relative;
+    top:-50px
+}
+svg:not(:root) {
+    width: 100%;
+    overflow: hidden;
+}
+.create-pool {
+    font-size: 2.5vw;
+    text-align: left;
+    color: #1b2c59;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+main p a {
+    
+    text-decoration: underline;
+}
+a {
+    font-weight: 700;
+    cursor: pointer;
+}
+text {
+    white-space: nowrap;
+    font-size: 45;
+}
+@media (max-width:1024px){
+    .block1{
+        top:12vh;
+        right:0;
+        height:20vh
+    }
+    .block1, .block2{
+        position:absolute
+    }
+    .block2{
+        top:70vh;
+        left:0;
+        height:25vh
+    }
+}
+@media (max-width:600px){
+    .block1{
+        position:absolute;
+        top:10vh;
+        right:0;
+        height:20vh
+    }
+    .block2, .laptop{
+        display:none
+    }
+    .small-laptop{
+        display:block;
+        width:100vw
+    }
+    span.hr{
+        letter-spacing:-1.2rem!important
+    }
+    .create-pool{
+        font-size:18px!important
+    }
+}
+@media (min-width:1400px){
+    .create-pool
+    {
+        font-size:40px!important;
+        margin-bottom:0
+    }
+    .faint-text{
+        font-size:24px!important
+    }
+}
+@media (min-width:3800px){
+    h1.jumbo-title{
+        font-size:264px!important;
+        line-height:316.8px!
+    }
+    .create-pool{
+        font-size:72px!important;
+        margin-bottom:0
+    }
+    p.create-pool{
+        margin-top:100px
+    }
+    .faint-text{
+        font-size:36px!important
+    }
+    span.hr{
+        letter-spacing:-4rem!important
+    }
+}
+    .container {
+        max-width: 968px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+footer{
+    margin-bottom: 0 !important;
+}
+    @media only screen and (min-width: 75em){
+    .container {
+        width: 100rem;
+    }
+}

@@ -1,0 +1,27 @@
+footer{
+    margin-bottom: 0 !important;
+}
+.navigation-example{
+	min-height: 0;
+}
+a:hover{
+    text-decoration: underline;
+    color: #0f98aa;
+}
+a {
+    color: #00bcd4;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+h2{
+	font-size: 1.5em;
+}
+.main{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.navbar .navbar-center{
+    float: left;
+}
